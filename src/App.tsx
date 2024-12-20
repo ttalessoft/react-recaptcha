@@ -36,10 +36,12 @@ function App() {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" required />
         </div>
-        <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          onChange={onChange}
-        />
+        <div className="recaptcha-container">
+          <ReCAPTCHA
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={onChange}
+          />
+        </div>
         <button type="submit" disabled={!isValidUser}>
           Submit
         </button>
